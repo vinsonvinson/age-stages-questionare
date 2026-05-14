@@ -7,6 +7,8 @@ import Start from "./pages/screening/Start.jsx";
 import Usia from "./pages/screening/Usia.jsx";
 import Questions from "./pages/screening/Questions.jsx";
 import Result from "./pages/screening/Result.jsx";
+import Rekomendasi from "./pages/Rekomendasi.jsx";
+import Menu from "./pages/Menu.jsx";
 import { Provider } from "react-redux"; // Import Provider
 import { store } from "./store/store"; // Import store yang baru dibuat
 
@@ -16,10 +18,12 @@ createRoot(document.getElementById("root")).render(
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/menu" element={<Menu />} />
                     <Route path="/screening" element={<Start />} />
                     <Route path="/usia" element={<Usia />} />
                     <Route path="/questions" element={<Questions />} />
                     <Route path="/result" element={<Result />} />
+                    <Route path="/rekomendasi" element={<Rekomendasi />} />
                 </Routes>
             </BrowserRouter>
         </Provider>

@@ -53,11 +53,11 @@ function Start() {
                     </div>
 
                     {/* KOLOM KANAN: Form Input */}
-                    <div className="flex flex-col space-y-6">
+                    <div className="flex flex-col space-y-6 mb-20 md:mb-0">
                         {/* Input Nama */}
                         <div className="flex items-center bg-[#d4f6a1] rounded-[40px] px-8 py-5 shadow-sm">
                             <span className="text-[#e83e8c] font-black text-2xl uppercase mr-4">
-                                Nama :
+                                Nama:
                             </span>
                             <input
                                 type="text"
@@ -71,8 +71,8 @@ function Start() {
 
                         {/* Input Umur */}
                         <div className="flex items-center bg-[#d4f6a1] rounded-[40px] px-8 py-5 shadow-sm">
-                            <span className="text-[#e83e8c] font-black text-2xl uppercase mr-4">
-                                Umur :
+                            <span className="text-[#e83e8c] font-black text-2xl uppercase mr-4 break-after-avoid">
+                                Umur:
                             </span>
                             <input
                                 type="text"
@@ -87,7 +87,7 @@ function Start() {
                         {/* Pemilihan Jenis Kelamin */}
                         <div className="pt-6">
                             <h2 className="text-[#e83e8c] font-black text-2xl uppercase mb-6 ml-4">
-                                Jenis Kelamin :
+                                Jenis Kelamin:
                             </h2>
                             <div className="flex justify-center gap-8 md:gap-16">
                                 {/* Tombol Laki-laki */}
@@ -134,7 +134,7 @@ function Start() {
                 <button
                     onClick={handleSubmit}
                     disabled={!isFormComplete} // Menonaktifkan tombol jika form belum lengkap
-                    className={`absolute bottom-8 right-8 md:bottom-12 md:right-16 transition-all duration-300 
+                    className={`absolute bottom-8 right-8 md:bottom-12 md:right-16 transition-all duration-300 z-50
           ${
               !isFormComplete
                   ? "opacity-40 cursor-not-allowed grayscale" // Style saat disabled

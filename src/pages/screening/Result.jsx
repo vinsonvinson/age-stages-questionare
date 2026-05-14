@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateField } from "../../store/childSlice";
 import { useNavigate } from "react-router";
-import arrow from "../../assets/screening/arrow.png";
 import arrowBack from "../../assets/screening/arrowBack.png";
 import bayi1 from "../../assets/screening/bayi1.png";
 import bayi2 from "../../assets/screening/bayi2.png";
@@ -16,8 +15,8 @@ function Result() {
         if ([12, 14, 16].includes(age)) return bayi1;
         if ([18, 22].includes(age)) return bayi2;
         if ([20, 27].includes(age)) return bayi3;
-        if ([24, 33].includes(age)) return bayi1;
-        if ([30, 36].includes(age)) return bayi2;
+        if ([24, 33].includes(age)) return bayi2;
+        if ([30, 36].includes(age)) return bayi3;
         return bayi1; // Fallback default
     };
 
@@ -42,6 +41,10 @@ function Result() {
     }
 
     const timelineNodes = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+
+    const directHome = () => {
+        navigate("/");
+    };
 
     return (
         <>
@@ -93,19 +96,12 @@ function Result() {
                     />
                 </div>
 
-                <button className="fixed bottom-8 left-8 md:bottom-12 md:left-12 hover:scale-110 transition-transform">
+                <button className="fixed bottom-8 left-8 md:bottom-12 md:left-12 hover:scale-110 transition-transform cursor-pointer">
                     <img
+                        onClick={directHome}
                         src={arrowBack}
                         alt="Kembali"
                         className="w-12 md:w-16"
-                    />
-                </button>
-
-                <button className="fixed bottom-8 right-8 md:bottom-12 md:right-16 hover:scale-110 transition-transform hover:translate-x-2">
-                    <img
-                        src={arrow}
-                        alt="Lanjut"
-                        className="w-20 md:w-28 drop-shadow-lg"
                     />
                 </button>
             </div>

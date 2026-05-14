@@ -1,7 +1,9 @@
-const MenuItemCard = ({ imageSrc, title, description, isMainCard }) => {
+import { Link } from "react-router-dom";
+const MenuItemCard = ({ imageSrc, title, description, isMainCard, to }) => {
     return (
-        <div
-            className={`flex flex-col items-center bg-[#d4f6a1] rounded-4xl w-full h-full shadow-sm
+        <Link
+            to={to}
+            className={`flex flex-col items-center bg-[#d4f6a1] rounded-4xl w-full h-full shadow-sm hover:scale-105
         ${isMainCard ? "p-6 md:p-8" : "p-4 md:p-5"}
       `}
         >
@@ -34,7 +36,7 @@ const MenuItemCard = ({ imageSrc, title, description, isMainCard }) => {
                     {description}
                 </p>
             </div>
-        </div>
+        </Link>
     );
 };
 
