@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { updateField } from "../../store/childSlice";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import arrowBack from "../../assets/screening/arrowBack.png";
 import bayi1 from "../../assets/screening/bayi1.png";
