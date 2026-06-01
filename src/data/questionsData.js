@@ -7,7 +7,7 @@ export const questionsData = {
             id: 1,
             text: 'APAKAH SI KECIL SERING MENGUCAPKAN BUNYI SEPERTI "BA-BA" "DA-DA" ATAU "GA-GA"?',
             hasAudio: true,
-            audioSrc: "/audio/fah.mp3",
+            audioSrc: "/audio/12bulan_1.MP3",
         },
         {
             id: 2,
@@ -22,8 +22,7 @@ export const questionsData = {
         {
             id: 4,
             text: 'APAKAH ANAK SUDAH MENGUCAPKAN SEKITAR 3 KATA SEDERHANA SEPERTI "MAMA" ATAU "PAPA"?',
-            hasAudio: true,
-            audioSrc: "/audio/fah.mp3",
+            hasAudio: false,
         },
         {
             id: 5,
@@ -43,7 +42,7 @@ export const questionsData = {
             id: 1,
             text: 'APAKAH BAYI ANDA MENGUCAPKAN TIGA KATA, SEPERTI "MAMA", "PAPA", DAN "BABA"?',
             hasAudio: true,
-            audioSrc: "/audio/fah.mp3",
+            audioSrc: "/audio/14bulan_1.MP3",
         },
         {
             id: 2,
@@ -58,8 +57,7 @@ export const questionsData = {
         {
             id: 4,
             text: "APAKAH BAYI ANDA MENUNJUK, MENEPUK, ATAU MENCOBA MENGAMBIL GAMBAR-GAMBAR DI DALAM BUKU?",
-            hasAudio: true,
-            audioSrc: "/audio/fah.mp3",
+            hasAudio: false,
         },
         {
             id: 5,
