@@ -4,6 +4,7 @@ import { updateField } from "../../store/childSlice";
 import { useNavigate } from "react-router";
 import arrow from "../../assets/screening/arrow.png";
 import { questionsData } from "../../data/questionsData";
+import bola from "../../assets/screening/bola.png";
 
 function Questions() {
     const navigate = useNavigate();
@@ -95,8 +96,8 @@ function Questions() {
                             {/* Pembungkus Speaker & Teks (Sisi Kiri di Desktop, Atas di HP) */}
                             <div className="flex items-start md:items-center gap-3 w-full md:flex-1">
                                 {/* Ikon Speaker */}
-                                <div className="w-10 shrink-0 flex justify-center mt-2 md:mt-0">
-                                    {q.hasAudio && (
+                                <div className="w-10 h-20 shrink-0 flex justify-center mt-2 md:mt-0">
+                                    {q.hasAudio ? (
                                         <button
                                             onClick={() =>
                                                 playAudio(q.audioSrc)
@@ -113,12 +114,20 @@ function Questions() {
                                                 <path d="M15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z" />
                                             </svg>
                                         </button>
+                                    ) : (
+                                        q?.isShowImg && (
+                                            <img
+                                                src={bola}
+                                                alt=""
+                                                className="min-w-30 z-10 object-cover overflow-visible translate-x-5 translate-y-15 md:translate-0"
+                                            />
+                                        )
                                     )}
                                 </div>
 
                                 {/* Kotak Teks Pertanyaan */}
                                 <div className="flex-1 bg-[#cbf3a1] rounded-2xl md:rounded-[30px] px-5 md:px-6 py-4 flex items-start shadow-sm w-full">
-                                    <span className="text-[#e83e8c] font-black text-lg md:text-xl mr-3 md:mr-4">
+                                    <span className="text-[#f9a885] font-black text-lg md:text-xl mr-3 md:mr-4">
                                         {index + 1}.
                                     </span>
                                     <p className="text-[#659b3f] font-bold text-sm md:text-base leading-snug pt-0.5">

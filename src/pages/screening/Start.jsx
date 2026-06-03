@@ -34,7 +34,7 @@ function Start() {
                 <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
                     {/* KOLOM KIRI: Judul & Gambar */}
                     <div className="flex flex-col">
-                        <h1 className="text-6xl md:text-8xl font-black text-[#e83e8c] tracking-wide leading-none mb-8 drop-shadow-sm">
+                        <h1 className="text-6xl md:text-7xl font-black text-[#f9a885] tracking-wide leading-none drop-shadow-sm">
                             Identitas
                             <br />
                             anak
@@ -45,7 +45,7 @@ function Start() {
                             <img
                                 src={food}
                                 alt="Ilustrasi Makanan"
-                                className="w-full max-w-md rounded-4xl object-cover"
+                                className="w-full rounded-4xl object-cover"
                             />
                             {/* Ornamen Jelly melayang (Opsional, jika gambarnya terpisah) */}
                             {/* <img src="/images/jelly.png" className="absolute -top-16 right-4 w-32 drop-shadow-xl" /> */}
@@ -56,7 +56,7 @@ function Start() {
                     <div className="flex flex-col space-y-6 mb-20 md:mb-0">
                         {/* Input Nama */}
                         <div className="flex items-center bg-[#d4f6a1] rounded-[40px] px-8 py-5 shadow-sm">
-                            <span className="text-[#e83e8c] font-black text-2xl uppercase mr-4">
+                            <span className="text-[#f9a885] font-black text-2xl uppercase mr-4">
                                 Nama:
                             </span>
                             <input
@@ -65,13 +65,13 @@ function Start() {
                                 onChange={(e) =>
                                     handleChange("name", e.target.value)
                                 }
-                                className="bg-transparent outline-none flex-1 text-2xl text-[#e83e8c] font-semibold"
+                                className="bg-transparent outline-none flex-1 text-2xl text-[#f9a885] font-semibold"
                             />
                         </div>
 
                         {/* Input Umur */}
                         <div className="flex items-center bg-[#d4f6a1] rounded-[40px] px-8 py-5 shadow-sm">
-                            <span className="text-[#e83e8c] font-black text-2xl uppercase mr-4 break-after-avoid">
+                            <span className="text-[#f9a885] font-black text-2xl uppercase mr-4 break-after-avoid">
                                 Umur:
                             </span>
                             <input
@@ -80,13 +80,13 @@ function Start() {
                                 onChange={(e) =>
                                     handleChange("age", e.target.value)
                                 }
-                                className="bg-transparent outline-none flex-1 text-2xl text-[#e83e8c] font-semibold"
+                                className="bg-transparent outline-none flex-1 text-2xl text-[#f9a885] font-semibold"
                             />
                         </div>
 
                         {/* Pemilihan Jenis Kelamin */}
                         <div className="pt-6">
-                            <h2 className="text-[#e83e8c] font-black text-2xl uppercase mb-6 ml-4">
+                            <h2 className="text-[#f9a885] font-black text-2xl uppercase mb-6 ml-4">
                                 Jenis Kelamin:
                             </h2>
                             <div className="flex justify-center gap-8 md:gap-16">
@@ -97,7 +97,7 @@ function Start() {
                                     }
                                     className={`transition-transform duration-200 hover:scale-105 cursor-pointer ${
                                         gender === "laki-laki"
-                                            ? "ring-4 ring-[#e83e8c] rounded-4xl scale-105 bg-white/50"
+                                            ? "ring-4 ring-[#f9a885] rounded-4xl scale-105 bg-white/50"
                                             : "opacity-80"
                                     }`}
                                 >
@@ -115,7 +115,7 @@ function Start() {
                                     }
                                     className={`transition-transform duration-200 hover:scale-105 cursor-pointer ${
                                         gender === "perempuan"
-                                            ? "ring-4 ring-[#e83e8c] rounded-3xl scale-105 bg-white/50"
+                                            ? "ring-4 ring-[#f9a885] rounded-3xl scale-105 bg-white/50"
                                             : "opacity-80"
                                     }`}
                                 >

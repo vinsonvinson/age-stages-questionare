@@ -20,7 +20,7 @@ const MenuItemCard = ({ imageSrc, title, description, isMainCard, to }) => {
             <div className="flex flex-col items-center justify-center grow mt-4 md:mt-6">
                 {/* Judul */}
                 <h2
-                    className={`font-black text-[#e83e8c] uppercase text-center
+                    className={`font-black text-[#f9a885] uppercase text-center
             ${isMainCard ? "text-2xl md:text-3xl mb-2" : "text-base md:text-lg mb-1"}
           `}
                 >

@@ -38,7 +38,7 @@ function Home() {
         <>
             <div className="min-h-screen bg-[#fcf9eb] px-6 py-10 md:py-16 flex flex-col items-center font-sans">
                 {/* Judul Halaman */}
-                <h1 className="text-5xl md:text-6xl font-black text-[#e83e8c] tracking-wide mb-10 text-center">
+                <h1 className="text-5xl md:text-6xl font-black text-[#f9a885] tracking-wide mb-10 text-center">
                     Menu Utama
                 </h1>
 

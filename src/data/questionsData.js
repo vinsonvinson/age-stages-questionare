@@ -287,6 +287,7 @@ export const questionsData = {
             id: 6,
             text: 'SAAT MELIHAT BUKU BERGAMBAR, APAKAH ANAK ANDA MENJELASKAN APA YANG SEDANG TERJADI ATAU TINDAKAN APA YANG SEDANG DILAKUKAN DALAM GAMBAR TERSEBUT, ANDA BISA BERTANYA, "APA YANG SEDANG DILAKUKAN ANJING (ATAU ANAK LAKI-LAKI) ITU?"',
             hasAudio: false,
+            isShowImg: true,
         },
     ],
     33: [
@@ -309,6 +310,7 @@ export const questionsData = {
             id: 4,
             text: 'SAAT MELIHAT BUKU BERGAMBAR, APAKAH ANAK ANDA MENJELASKAN APA YANG SEDANG TERJADI ATAU TINDAKAN APA YANG SEDANG DILAKUKAN DALAM GAMBAR TERSEBUT, ANDA BISA BERTANYA, "APA YANG SEDANG DILAKUKAN ANJING (ATAU ANAK LAKI-LAKI) ITU?"',
             hasAudio: false,
+            isShowImg: true,
         },
         {
             id: 5,

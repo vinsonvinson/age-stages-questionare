@@ -20,7 +20,7 @@ function Home() {
                             <p>dini bersama dengan</p>
                             <img
                                 src={logo}
-                                className="w-10/12 mx-auto mt-5 mb-5"
+                                className="w-full mx-auto mt-5 mb-5"
                             />
                             <Link to="/menu">
                                 <img
