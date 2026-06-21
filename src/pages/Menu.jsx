@@ -24,7 +24,7 @@ function Home() {
             imageSrc: consultationImage,
             title: "KONSULTASI AHLI",
             description: "contact person",
-            to: "/",
+            to: "/kontak",
         },
         {
             imageSrc: foodImage,

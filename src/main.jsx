@@ -9,6 +9,7 @@ import Questions from "./pages/screening/Questions.jsx";
 import Result from "./pages/screening/Result.jsx";
 import Rekomendasi from "./pages/Rekomendasi.jsx";
 import Menu from "./pages/Menu.jsx";
+import Kontak from "./pages/Kontak.jsx";
 import { Provider } from "react-redux"; // Import Provider
 import { store } from "./store/store"; // Import store yang baru dibuat
 
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")).render(
                     <Route path="/questions" element={<Questions />} />
                     <Route path="/result" element={<Result />} />
                     <Route path="/rekomendasi" element={<Rekomendasi />} />
+                    <Route path="/kontak" element={<Kontak />} />
                 </Routes>
             </BrowserRouter>
         </Provider>

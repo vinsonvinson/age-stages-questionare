@@ -13,7 +13,7 @@ function Usia() {
     // Data bulan yang akan ditampilkan, dibagi per baris agar susunannya persis seperti desain
     const row1 = [12, 14, 16, 18];
     const row2 = [20, 22, 24];
-    const row3 = [27, 30, 33];
+    const row3 = [27, 30, 33, 36];
 
     const handleSelectMonth = (month) => {
         dispatch(updateField({ field: "ageInMonths", value: month }));
