@@ -25,7 +25,7 @@ function Kontak() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <img src={foto} alt="" />
+                    <img src={foto} alt="" className="md:max-w-[500px]" />
                 </div>
             </div>
         </>
